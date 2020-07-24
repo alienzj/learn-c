@@ -15,7 +15,8 @@ int main()
 
     printf("fahr\tcelsius\n");
 
-    while (fahr <= UPPER) {
+    while (fahr <= UPPER)
+    {
         celsius = 5.0 * (fahr - 32.0) / 9.0;
         printf("%3.0f\t%6.1f\n", fahr, celsius);
         fahr = fahr + STEP;
@@ -26,7 +27,6 @@ int main()
     print_fahr_celsius_table();
     return 0;
 }
-
 
 void print_fahr_celsius_table()
 {
